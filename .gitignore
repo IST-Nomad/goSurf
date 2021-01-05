@@ -1,0 +1,6 @@
+/node_modules
+/dest
+/app/fonts
+/app/img
+/app/css
+/app/js/libs.min.js
