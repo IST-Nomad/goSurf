@@ -1,29 +1,32 @@
-body{
-    font-family: 'Fira Sans', sans-serif;
+body {
+    font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
 }
-
-a{
+a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
-ul, li{
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.subtitle-left{
+.subtitle-left {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
-    text-transform: uppercase;
     color: #ffffff;
     opacity: 0.5;
     padding-left: 103px;
     position: relative;
     display: inline-block;
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         width: 80px;
@@ -31,5 +34,32 @@ ul, li{
         background-color: #fff;
         left: 0;
         top: 50%;
+    }
+}
+.title{
+    span{
+        font-size: 200px;
+        color: rgba(#fff, .02);
+        font-weight: 800;
+        position: relative;
+        transform: translateX(-50px);
+        display: inline-block;
+    }
+    h3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 80px;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
     }
 }
