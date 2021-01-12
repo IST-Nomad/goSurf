@@ -52,7 +52,7 @@
 .slider-arrows__left {
     right: 125px;
 }
-.slider-dots {
+.slider-dotshead {
     position: absolute;
     right: 50px;
     bottom: 36px;
@@ -203,6 +203,13 @@
         min-height: 750px;
         background: rgba(#1C2121, .85);
         position: relative;
+        transition: all .5s;
+        &:hover{
+            background: rgba(#1C2121, .3);
+            .serf-box__inner-btn{
+                display: block;
+            }
+        }
     }
 }
 .serf-slider{
@@ -260,7 +267,56 @@
     right: 0;
     display: none;
 }
+.slider-map{
+    max-width: 1200px;
+    min-height: 635px;
+    background-image: url(../img/world-map-dots.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    .slick-list{
+        min-height: 635px;
+    }
+}
+.slider-dots__circle{
+    width: 24px;
+    height: 24px;
+    background-color: $green;
+    border-radius: 50%;
+}
+.slider-dots__content{
+    display: none;
+}
+.slider-dots{
+    position: relative;
+}
+.slider-dots--1{
+    top: 250px;
+    left: 0;
+}
+.slider-dots--2{
 
+}
+.slider-dots--3{
+
+}
+.slider-dots--4{
+
+}
+.slider-dots--5{
+
+}
+
+.slider-dots--6{
+
+}
+.slider-dots--7{
+
+}
+.slider-dots--8{
+
+}
 
 
 
