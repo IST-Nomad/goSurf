@@ -29,7 +29,7 @@ $(function () {
         asNavFor: '.surf-slider',
     });
 
-    $('.travel__slider').slick({
+    $('.holder__slider').slick({
         infinite: true,
         fade: true,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
