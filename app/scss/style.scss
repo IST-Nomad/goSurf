@@ -419,6 +419,10 @@
 }
 .holder {
     background-image: url(../img/travel-bg.png);
+    &.sleep{
+        background-image: url(../img/frangipani.png);
+        
+    }
     background-position: bottom right;
     background-repeat: no-repeat;
     margin-bottom: 50px;
@@ -439,9 +443,13 @@
         margin-top: -230px;
         background-repeat: no-repeat;
         background-position: right center;
+        background-size: contain;
         .descr__head {
             position: relative;
+            padding-right: 68px;
+            &.descr__head-sleep{
             padding-right: 215px; /* сдвиг картинок вправо */
+            }
             img {
                 position: absolute;
                 right: 0;
@@ -451,10 +459,6 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                li{
-                    display: inline-block;
-                    margin-left: -25px;
-                }
                 img{
                     position: static;
                 }
@@ -492,12 +496,12 @@
         text-align: right;
     }
     &__info-title {
-        font-weight: 800;
         font-size: 40px;
         line-height: 36px;
+        font-weight: 800;
         padding-left: 40px;
         position: relative;
-        span {
+        .holder-pricing__span{
             font-weight: 400;
             font-size: 14px;
             line-height: 36px;
@@ -510,5 +514,25 @@
         }
     }
 }
+.shop{
+    background-image: url(../img/shop-bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.shop__slider{
+    padding-left: 132px;
+}
+.descr__head-shop{
+    max-width: 440px;
+}
+
+
+
+
+
+
+
+
+
 
 @import "media";
