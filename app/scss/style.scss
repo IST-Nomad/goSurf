@@ -118,6 +118,30 @@
         }
     }
 }
+.menu-btn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 20;
+    right: 20px;
+    top: 75px;
+    background-color: rgba(#fff, .1);
+    &__inner{
+        width: 40px;
+    }
+    &__line{
+        height: 5px;
+        background-color: $green;
+        + .menu-btn__line{
+            margin-top: 5px;
+        }
+    }
+}
 .menu__list {
     text-transform: none;
 }
