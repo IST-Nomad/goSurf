@@ -149,6 +149,7 @@ li {
         }
     }
 }
+
 .surf {
     padding: 160px 0 250px 0;
 }
@@ -208,9 +209,11 @@ input[type="number"] {
     position: absolute;
     right: 25px;
 }
-.star-list{
-    li{
+.star-list {
+    li {
         display: inline-block;
-        margin-left: -25px;
+        & + li{
+            margin-left: -25px;
+        }
     }
 }
